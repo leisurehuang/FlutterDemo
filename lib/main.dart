@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hello_rectangle/category.dart';
 
-
 const _categoryName = 'Cake';
 const _categoryIcon = Icons.cake;
 const _categoryColor = Colors.green;
-
 
 void main() {
   runApp(
@@ -17,7 +15,11 @@ void main() {
           title: Text('Hello Rectangle'),
         ),
         body: Center(
-          child: Category(),
+          child: Category(
+            name: _categoryName,
+            color: _categoryColor,
+            iconLocation: _categoryIcon,
+          ),
         ),
       ),
     ),
